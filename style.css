@@ -1,0 +1,86 @@
+/* General Reset & Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b2b46; /* Very dark slate */
+    margin: 0;
+    padding: 20px;
+    color: #f1f5f9; /* Light text */
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #083770; /* Light blue */
+    margin-bottom: 30px;
+}
+
+/* Form Container */
+form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 35px 40px;
+    background: #121d30; /* Darker slate */
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-top: 18px;
+    color: #e2e8f0; /* Light grayish text */
+    font-weight: 600;
+}
+
+/* Input & Select Styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border: 1px solid #475569; /* Medium-dark border */
+    border-radius: 6px;
+    background-color: #334155; /* Dark input background */
+    color: #f8fafc;
+    box-sizing: border-box;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #3b82f6; /* Blue on focus */
+    outline: none;
+    background-color: #1e293b;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    margin-top: 30px;
+    background-color: #3b82f6; /* Blue */
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2563eb; /* Slightly darker blue */
+    transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form {
+        padding: 25px 20px;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form method="post" style="text-align: center;">
+    <h1 style="font-family: 'Lucida Sans', sans-serif;"><i>Admission Form</i></h1>
+
+    <div class="form-group">
+      <label for="firstname">First Name:</label><br>
+      <input type="text" id="firstname" name="firstname" required placeholder="First Name">
+    </div>
+
+    <div class="form-group">
+      <label for="lastname">Last Name:</label><br>
+      <input type="text" id="lastname" name="lastname" required placeholder="Last Name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required placeholder="Email">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone:</label><br>
+      <input type="tel" id="phone" name="phone" required placeholder="Phone">
+    </div>
+
+    <fieldset class="form-group">
+      <legend>Gender:</legend>
+      <label><input type="radio" name="gender" value="male" required> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+    </fieldset>
+
+    <div class="form-group">
+      <label for="address">Address:</label><br>
+      <textarea id="address" name="address" required placeholder="Address" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+
+    <div class="form-group">
+      <label for="city">City:</label><br>
+      <select name="city" id="city" required>
+        <option value="">Select a city</option>
+        <option value="islamabad">Islamabad</option>
+        <option value="karachi">Karachi</option>
+        <option value="lahore">Lahore</option>
+        <option value="peshawar">Peshawar</option>
+        <option value="quetta">Quetta</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="religion">Religion:</label><br>
+      <input type="text" id="religion" name="religion" placeholder="Religion">
+    </div>
+
+    <div class="form-group">
+      <label for="nationality">Nationality:</label><br>
+      <input type="text" id="nationality" name="nationality" placeholder="Nationality">
+    </div>
+
+    <div class="form-group">
+      <label for="bloodgroup">Blood Group:</label><br>
+      <input type="text" id="bloodgroup" name="bloodgroup" placeholder="Blood Group">
+    </div>
+
+    <div class="form-group">
+      <label for="class">Admission required in class:</label><br>
+      <select name="class" id="class" required>
+        <option value="">Select Class</option>
+        <option value="1">I</option>
+        <option value="2">II</option>
+        <option value="3">III</option>
+        <option value="4">IV</option>
+        <option value="5">V</option>
+        <option value="6">VI</option>
+        <option value="7">VII</option>
+        <option value="8">VIII</option>
+        <option value="9">IX</option>
+        <option value="10">X</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</body>
+</html>
